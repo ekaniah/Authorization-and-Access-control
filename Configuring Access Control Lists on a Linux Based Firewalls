@@ -1,0 +1,99 @@
+# Lab Title: Authorization and Access control
+
+## Date: 05/21/2024
+
+## Lab Overview:
+Provide a brief overview of the lab, including the lab title and the purpose, in one or two sentences
+This lab teaches one how to set up a Linux-based firewall and configure access control lists (ACLs) to control traffic as well as test those rules.
+I also learnt what a Network Address Translation (NAT) is, how it works, and how to set one up.
+---
+
+### Part 1 - Configuring Access Control Lists on a Linux Based Firewalls
+
+#### Time for Lab Completion:
+Provide the time to complete the lab in “HRS, MIN” format,
+2hrs,5mins
+
+#### Purpose of the Lab:
+Provide a detailed description of the lab, including what the main idea was, the tasks performed, how it relates to the unit, and how it relates to cybersecurity as a whole
+This lab teaches one how to set up a sniffer, enable services, and configure Linux Firewall rules and test those rules.
+Configuring access control list on a linux based firewall is an important security measure that helps control and restrict network traffic to and from a system or network.
+
+#### What did you enjoy about the lab?
+ Everything
+
+#### What did you find most challenging about the lab?
+Your description here
+Everything was challenging.
+
+Discussion Questions A
+What could prevent the ping command from working?
+i. The IP address has not been configured.
+ii. The ICMP is blocked.
+What command will allow you to set a default gateway in Linux?
+route add default gw <gateway addr>
+What command will allow you to view all interfaces on a Linux machine?
+netstat -r
+What switch in Linux will limit the number of pings (prevent continuous ping)?
+-c <numberofpings>
+
+Discussion Questions B
+What does NAT stand for?
+Network Address Translation
+What command is used to set up NAT rules on a Linux machine?
+iptable --table nat --apend POSTROUTING --out-interface eth1 -j MASQUERADE
+Why would an administrator run the nmap scan on 127.0.0.1?
+To view current running services on the internal Kali
+What command is used to create SSH keys on a Linux machine?
+ssh-keygen
+
+Discussion Questions C
+What is the command to download a file with tftp?
+get <filename>
+What does the program fgdump.exe do?
+It steals passwords from systems on a network.
+What command needs to be typed in ftp to switch to binary mode?
+bin
+Where is the default web root directory located in Kali Linux?
+/usr/share/wallpapers/kali/contents/images/*/home/hax0r/
+ 
+---
+
+### Part 2 - Implementing Nat and allowing remote access
+
+#### Time for Lab Completion:
+
+Provide the time to complete the lab in “HRS, MIN” format
+1hr,45mins
+
+#### Purpose of the Lab:
+Provide a detailed description of the lab, including what the main idea was, the tasks performed, how it relates to the unit, and how it relates to cybersecurity as a whole
+This lab teaches one how to configure a Network Address Translation-NAT, use Wireshark to understand how NAT works and use remote desktop on a network.
+Network Address Translation-NAT allows many machines with private IP addresses to use a single Public IP Address to connect to the Internet. In this lab, you will implement NAT on a firewall.
+
+#### What did you enjoy about the lab?
+Your description here
+I always enjoy the interactiveness of the lab.
+#### What did you find most challenging about the lab?
+Your description here
+I didn't find any of the task challenging. It was easy to understand and straightfoward.
+
+Discussion Questions A
+What application are you using to capture packets?
+Wireshark
+What is NAT?
+Network Address Translation
+What application do you use to determine an open port on an firewall?
+Nmap
+
+Discussion Questions B
+What is the name of product you are using as a firewall?
+pfsense
+What do you setup when you want to filter traffic from getting through a firewall?
+NAT firewall rule
+
+Discussion Questions C
+What is a VPN?
+Virtual Private Network
+What protocol runs on top of the VPN to allow secure communcation?
+PPTP- Point to Point Tunnelling Protocol
